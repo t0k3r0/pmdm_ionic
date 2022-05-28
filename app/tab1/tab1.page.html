@@ -9,7 +9,7 @@
     <ion-list>
       <ion-list-header>
         <ion-label> esto es el label </ion-label>
-        <ion-button (click)="onClick()"> esto es el buton </ion-button>
+        <ion-button [disabled]= "formulario.invalid" (click)="onClick()"> esto es el buton </ion-button>
       </ion-list-header>
 
 
