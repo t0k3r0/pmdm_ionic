@@ -5,18 +5,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-list *ngFor="let it of listaObjetos">
-    <ion-item [routerLink]="it.getEnlace()">
-      <ion-label>{{it.getNombre()}}</ion-label>
-      <ion-icon slot="start" [name]="it.getIcono()"></ion-icon>
-    </ion-item>
+  <ion-list *ngFor="let it of gestionSucesos.getSucesos()">
+    <ion-item> <ion-label>{{it.nombre3}}</ion-label></ion-item>
   </ion-list>
   <div id="container">
     <strong>esto es strong </strong>
-    <p>
-      esto es p<a target="_blank" rel="noopener noreferrer" href="pagina.com"
-        >esto es enlace</a
-      >
-    </p>
+    <p>esto es p</p>
   </div>
 </ion-content>
